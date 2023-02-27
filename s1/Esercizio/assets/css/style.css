@@ -251,7 +251,7 @@ footer a {
 
     article iframe, article section {
         display: inline-block;
-        width: 48%;
+        width: 50%;
         vertical-align: middle;
         margin-inline: -2px;
         height: 300px;
@@ -288,9 +288,10 @@ footer a {
 
 @media print {
     body{
-    background-image:none;
+    background-image: none;
     }
+    
     header, article iframe,article section, aside,footer{
-        display:none;
+        display: none;
     }
 }
