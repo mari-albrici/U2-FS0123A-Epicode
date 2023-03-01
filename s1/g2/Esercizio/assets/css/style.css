@@ -454,6 +454,7 @@ footer a {
 /* BOTTONI EXTRA */
 .to-top, .calendar, .plus {
   border: 2px solid white;
+  backdrop-filter: blur(2px);
   background-color: rgba(255, 255, 255, 45%);
   border-radius: 6px;
   width: 50px;
