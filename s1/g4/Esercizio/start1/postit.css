@@ -1,14 +1,22 @@
 body {
     background-image: url(blackboard.jpeg);
     background-size: cover;
+    font-family: 'Indie Flower', cursive;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: white;
+    padding: 100px;
 }
 
 main {
     display: flex;
     justify-content: center;
-    margin: 150px 100px 200px 100px;
-    font-family: 'Indie Flower', cursive;
+    margin: 150px 100px 80px 100px;
     gap: 50px;
     flex-wrap: wrap;
 }
