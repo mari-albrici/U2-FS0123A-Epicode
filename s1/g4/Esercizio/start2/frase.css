@@ -23,21 +23,28 @@ main {
 }
 
 #secondaryBackground {
-    width: 1200px;
-    height: 300px;
-    background-color: #D2D5DD;
+    width: 1000px;
+    height: 250px;
+    background-color: rgba(52, 0, 104, 30%);
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: no-wrap;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    border: 10px double #23B5D3;
+}
+
+img {
+    width: 150px;
 }
 
 #testoAlternato {
-    width: 900px;
+    width: 700px;
     height: 150px;
     color: white;
     font-size: 1.8rem;
-    line-height: 3rem;
+    line-height: 3.5rem;
     padding: 25px;
     text-shadow: 0px 2px 2px #23B5D3;
 }
@@ -45,22 +52,22 @@ main {
 .word1,
 .word2,
 .word3 {
-    color: #23B5D3;
+    color: #340068;
     position: absolute;
     padding-left: 8px;
     text-shadow: 0px 2px 2px white;
 }
 
 .word1 {
-    animation: wordOne 8.5s linear infinite both;
+    animation: wordOne 8s linear infinite both;
 }
 
 .word2 {
-    animation: wordTwo 8.5s linear infinite both;
+    animation: wordTwo 8s linear infinite both;
 }
 
 .word3 {
-    animation: wordThree 8.5s linear infinite both;
+    animation: wordThree 8s linear infinite both;
 }
 
 @keyframes wordOne {
@@ -68,21 +75,21 @@ main {
         opacity: 0;
     }
 
-    6.25% {
+    3% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: top;
+        transform: translateY(-30px);
+        transition: 0.1s;
     }
 
     12.5% {
         opacity: 1;
-        transform: rotateX(0deg)
+        transform: translateY(0px)
     }
 
     25% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: bottom;
+        transform: translateY(30px);
+        transition: 0.1s;
     }
 
     37.5% {
@@ -125,21 +132,21 @@ main {
         opacity: 0;
     }
 
-    37.5% {
+    35% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: top;
+        transform: translateY(-30px);
+        transition: 0.1s;
     }
 
     50% {
         opacity: 1;
-        transform: rotateX(0deg)
+        transform: translateY(0px)
     }
 
     62.5% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: bottom;
+        transform: translateY(30px);
+        transition: 0.1s;
     }
 
     75% {
@@ -180,20 +187,20 @@ main {
         opacity: 0;
     }
 
-    75% {
+    70% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: top;
+        transform: translateY(-30px);
+        transition: 0.1s;
     }
 
     87.5% {
         opacity: 1;
-        transform: rotateX(0deg)
+        transform: translateY(0px)
     }
 
     100% {
         opacity: 0;
-        transform: rotateX(90deg);
-        transform-origin: bottom;
+        transform: translateY(30px);
+        transition: 0.1s;
     }
 }
