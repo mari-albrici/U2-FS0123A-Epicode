@@ -10,20 +10,31 @@ footer {
     text-align: center;
     font-size: 0.8rem;
     color: white;
-    padding: 100px;
+    padding: 50px;
+}
+
+header {
+    text-align: right;
+    font-size: 0.8rem;
+    color: white;
+    padding: 20px;
+}
+
+header span {
+    color: gold;
 }
 
 main {
     display: flex;
     justify-content: center;
-    margin: 150px 100px 80px 100px;
+    margin: 130px 100px 80px 100px;
     gap: 50px;
     flex-wrap: wrap;
 }
 
 .postit {
     width: 350px;
-    height: 300px; 
+    height: 300px;
 }
 
 .postit h2 {
@@ -39,7 +50,9 @@ main {
 }
 
 
-#postit1, #postit3, #postit6 {
+#postit1,
+#postit3,
+#postit6 {
     background-color: #BBD1EA;
     transform: rotate3d(1, 1, 1, -6deg) rotate(-3deg) skewY(1deg);
     box-shadow: inset 0px -8px 20px #A1C0E2, 5px 30px 10px black;
@@ -47,15 +60,18 @@ main {
     transition: 500ms;
 }
 
-#postit2, #postit8 {
+#postit2,
+#postit8 {
     background-color: #FFD4CA;
-    transform: rotate3d(1, 1, 1, 6deg) rotate(3deg); 
+    transform: rotate3d(1, 1, 1, 6deg) rotate(3deg);
     box-shadow: inset 0px -8px 20px #FFBCAD, 5px 30px 10px black;
     transition: box-shadow 100ms;
     transition: 500ms;
 }
 
-#postit4, #postit5, #postit7 {
+#postit4,
+#postit5,
+#postit7 {
     background-color: #F7EAB5;
     transform: rotate3d(1, 1, 1, 6deg) rotate(-3deg) skewY(-1deg);
     box-shadow: inset 0px -8px 20px #F3DE8A, 5px 30px 10px black;
@@ -64,20 +80,58 @@ main {
 }
 
 
-#postit2:hover , #postit8:hover{
+#postit2:hover,
+#postit8:hover {
     transform: perspective(180px) translateZ(10px) rotate(3deg);
     box-shadow: inset 0px -8px 20px #FFBCAD, 8px 35px 50px black;
     transition: 500ms;
 }
 
-#postit1:hover, #postit3:hover, #postit6:hover {
+#postit1:hover,
+#postit3:hover,
+#postit6:hover {
     transform: perspective(180px) translateZ(10px) rotate(-3deg) skewY(1deg);
     box-shadow: inset 0px -8px 20px #A1C0E2, 8px 35px 50px black;
     transition: 500ms;
 }
 
-#postit4:hover, #postit5:hover, #postit7:hover {
+#postit4:hover,
+#postit5:hover,
+#postit7:hover {
     transform: perspective(180px) translateZ(10px) rotate(-3deg) skewY(-1deg);
     box-shadow: inset 0px -8px 20px #F3DE8A, 8px 35px 50px black;
     transition: 500ms;
+}
+
+
+#postit1:active, #postit2:active, #postit3:active, #postit4:active, #postit5:active, #postit6:active, #postit7:active, #postit8:active {
+    animation: fallingPaper 2s linear forwards;
+    z-index: 1;
+}
+
+
+@keyframes fallingPaper {
+    0% {
+        transform: translateY(0);
+    }
+
+    20% {
+        transform: translateX(25px) translateY(100px) skew(3deg) rotate(20deg);
+    }
+
+    40% {
+        transform: translateX(-180px) translateY(200px) skew(-3deg) rotate(-20deg);
+    }
+
+    60% {
+        transform: translateX(138px) translateY(300px) skew(3deg) rotate(20deg);
+    }
+
+    80% {
+        transform: translateX(-109px) translateY(400px) skew(-3deg) rotate(-20deg);
+    }
+
+    100% {
+        transform: translateY(900px);
+    }
 }
