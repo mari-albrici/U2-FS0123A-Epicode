@@ -117,7 +117,7 @@ nav a::before {
 }
 
 #hero svg g{
-    fill: #ffc017;
+    fill: none;
     transition: fill 0.3s backwards;
   }
 
