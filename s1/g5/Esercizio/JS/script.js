@@ -25,3 +25,9 @@ function scrollnav() {
     menuButtonD.style.backgroundColor = "white";
   }
 }
+
+
+// M ANIMATION
+
+let em = document.querySelectorAll("g");
+

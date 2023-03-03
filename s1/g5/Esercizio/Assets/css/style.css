@@ -23,7 +23,7 @@ header {
 
 .animation-em {
     position: absolute;
-    top: 50px;
+    top: 66px;
     right: 0;
 }
 
@@ -199,7 +199,8 @@ nav a::before {
 
 .profile img {
     width: 20px;
-    padding-right: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
 }
 
 .author {
@@ -285,7 +286,7 @@ nav a::before {
     padding-block: 0.5rem;
 }
 
-.other-article-content .abstract {
+.abstract {
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     color: grey;
