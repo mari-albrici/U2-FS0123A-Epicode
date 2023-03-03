@@ -116,6 +116,15 @@ nav a::before {
     font-size: 1.5rem;
 }
 
+#hero svg g{
+    fill: #ffc017;
+    transition: fill 0.3s backwards;
+  }
+
+#hero svg g.show {
+    fill: #191919;
+  }
+
 .text {
     display: flex;
     flex-direction: column;
@@ -232,6 +241,13 @@ nav a::before {
     font-weight: 400;
     color: gray;
 }
+
+.star {
+    height: 15px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+}
+
 
 
 /* UNDERNEATH SPOTLIGHT */

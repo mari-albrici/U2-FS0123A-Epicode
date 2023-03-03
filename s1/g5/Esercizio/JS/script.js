@@ -29,5 +29,22 @@ function scrollnav() {
 
 // M ANIMATION
 
-let em = document.querySelectorAll("g");
+const gs = document.querySelectorAll('#hero svg g');
 
+
+function randomFromArray(array) {
+    return array[Math.floor(Math.random() * array.length)];
+  }
+  
+
+  function toggleRandomG() {
+    const gToToggle = randomFromArray(Array.from(gs));
+    if (gToToggle.classList.contains('show')) {
+      gToToggle.classList.remove('show');
+    } else {
+      gToToggle.classList.add('show');
+    }
+  }
+  
+
+  setInterval(toggleRandomG, 9);
