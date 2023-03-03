@@ -29,7 +29,7 @@ function scrollnav() {
 
 // M ANIMATION
 
-const gs = document.querySelectorAll('#hero svg g');
+const ems = document.querySelectorAll('#hero svg g');
 
 
 function randomFromArray(array) {
@@ -38,7 +38,7 @@ function randomFromArray(array) {
   
 
   function toggleRandomG() {
-    const gToToggle = randomFromArray(Array.from(gs));
+    const gToToggle = randomFromArray(Array.from(ems));
     if (gToToggle.classList.contains('show')) {
       gToToggle.classList.remove('show');
     } else {
