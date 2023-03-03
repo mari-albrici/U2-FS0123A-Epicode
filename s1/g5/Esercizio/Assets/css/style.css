@@ -1,0 +1,379 @@
+/* FONTS 
+font-family: 'Roboto', sans-serif;
+font-family: 'Spectral', serif; */
+
+/* COLORI 
+#ffc017
+#191919
+#1a8917  */
+
+body {
+    background-color: white;
+}
+
+/* HEADER E NAVBAR */
+header {
+    background-color: #ffc017;
+    border-bottom: 1px solid #191919;
+}
+
+.content {
+    margin-top: 76px;
+}
+
+.animation-em {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    justify-content: space-between;
+    background-color: #ffc017;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #191919;
+    padding-inline: 300px;
+    padding-block: 20px;
+    z-index: 1;
+    transition: background-color 0.2s linear;
+}
+
+nav img {
+    justify-content: flex-start;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu .get-started {
+    background-color: #191919;
+    color: white;
+    height: 35px;
+    width: fit-content;
+    padding-inline: 20px;
+    border-radius: 17.5px;
+    border: none;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-inline: 5px;
+    transition: background-color 0.2s linear;
+}
+
+.menu button {
+    background-color: #ffc017;
+    color: #191919;
+    border: none;
+    height: 30px;
+    width: fit-content;
+    font-size: 0.9rem;
+    color: #191919;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    margin-inline: 5px;
+    padding-inline: 10px;
+    transition: background-color 0.2s linear;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a::after {
+    color: #191919;
+    text-decoration: none;
+}
+
+nav a::before {
+    color: #191919;
+    text-decoration: none;
+}
+
+/* HERO SECTION */
+#hero {
+    padding-inline: 300px;
+}
+
+#hero h1 {
+    font-family: 'Spectral', serif;
+    font-weight: 500;
+    font-size: 7rem;
+    letter-spacing: -7px;
+    padding-block: 80px 25px;
+}
+
+#hero h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.title {
+    width: 700px;
+}
+
+.start-reading {
+    width: 700px;
+    padding-block: 50px 95px;
+}
+
+.start-reading button {
+    background-color: #191919;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+    height: 40px;
+    width: fit-content;
+    padding-inline: 50px;
+    border: none;
+    border-radius: 20px;
+}
+
+/* MAIN */
+/* SPOTLIGHT */
+
+.spotlight {
+    padding-inline: 300px;
+    padding-block: 40px;
+    border-bottom: 1px solid lightgray;
+}
+
+.spotlight-trending {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.spotlight-trending h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+.spotlight-articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-basis: 33%;
+    height: fit-content;
+    padding-bottom: 25px;
+}
+
+.article .position {
+    font-family: 'Spectral', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: lightgray;
+    padding-right: 15px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.profile img {
+    width: 20px;
+    padding-right: 10px;
+}
+
+.author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.article-content {
+    width: 300px;
+}
+
+.article-content h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-block: 15px;
+    max-height: 4.2em;
+    line-height: 1.3rem;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+}
+
+.date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: gray;
+}
+
+
+/* UNDERNEATH SPOTLIGHT */
+.underneath-spotlight {
+    display: flex;
+    padding-inline: 300px;
+    padding-block: 40px;
+}
+
+/* OTHER ARTICLES */
+.other-articles {
+    padding-right: 50px;
+    width: 70%;
+}
+
+.other-article {
+    height: 135px;
+    padding-block: 30px;
+}
+
+.main-article-content {
+    width: 66%;
+}
+
+.other-profile {
+    display: flex;
+    align-items: center;
+}
+
+.other-profile img {
+    width: 25px;
+    border-radius: 5px;
+}
+
+.other-author {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8rem;
+    color: #191919;
+    font-weight: 600;
+    padding-inline: 0.6rem;
+}
+
+.other-article-content {
+    display: flex;
+}
+
+.other-article-content h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    color: #191919;
+    font-weight: 600;
+    padding-block: 0.5rem;
+}
+
+.other-article-content .abstract {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color: grey;
+    font-weight: 100;
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.article-image {
+    display: flex;
+    align-items: center;
+}
+
+.article-image img {
+    height: 130px;
+    padding: 15px;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information button {
+    width: fit-content;
+    height: 20px;
+    color: gray;
+    background-color: #F5F5F5;
+    border: none;
+    border-radius: 10px;
+}
+/* FOOTER */
+
+.footer-content {
+    width: 35%;
+}
+
+footer {
+    display: block;
+    position: sticky;
+    top: 76px;
+    padding-right: 60px;  
+}
+
+footer h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    padding-block: 20px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 33%;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 30px;
+}
+
+.categories button {
+    border: 0.5px solid lightgray;
+    border-radius: 3px;;
+    background-color: white;
+    color: gray;
+    font-weight: 100;
+    height: 30px;
+    width: fit-content;
+    padding: 10px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.useful-links {
+    padding-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-basis: 15%;
+}
+
+.useful-links div {
+    padding: 10px;
+}
+
+footer a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-weight: 100;
+    color: gray;
+}
