@@ -55,7 +55,7 @@ main {
 #postit6 {
     background-color: #BBD1EA;
     transform: rotate3d(1, 1, 1, -6deg) rotate(-3deg) skewY(1deg);
-    box-shadow: inset 0px -8px 20px #A1C0E2, 5px 30px 10px black;
+    box-shadow: inset 0px -15px 20px #A1C0E2, 5px 30px 10px black;
     transition: box-shadow 100ms;
     transition: 500ms;
 }
@@ -64,7 +64,7 @@ main {
 #postit8 {
     background-color: #FFD4CA;
     transform: rotate3d(1, 1, 1, 6deg) rotate(3deg);
-    box-shadow: inset 0px -8px 20px #FFBCAD, 5px 30px 10px black;
+    box-shadow: inset 0px -15px 20px #FFBCAD, 5px 30px 10px black;
     transition: box-shadow 100ms;
     transition: 500ms;
 }
@@ -74,7 +74,7 @@ main {
 #postit7 {
     background-color: #F7EAB5;
     transform: rotate3d(1, 1, 1, 6deg) rotate(-3deg) skewY(-1deg);
-    box-shadow: inset 0px -8px 20px #F3DE8A, 5px 30px 10px black;
+    box-shadow: inset 0px -15px 20px #F3DE8A, 5px 30px 10px black;
     transition: box-shadow 100ms;
     transition: 500ms;
 }
@@ -104,7 +104,14 @@ main {
 }
 
 
-#postit1:active, #postit2:active, #postit3:active, #postit4:active, #postit5:active, #postit6:active, #postit7:active, #postit8:active {
+#postit1:active,
+#postit2:active,
+#postit3:active,
+#postit4:active,
+#postit5:active,
+#postit6:active,
+#postit7:active,
+#postit8:active {
     animation: fallingPaper 2s linear forwards;
     z-index: 1;
 }
@@ -135,3 +142,5 @@ main {
         transform: translateY(900px);
     }
 }
+
+
