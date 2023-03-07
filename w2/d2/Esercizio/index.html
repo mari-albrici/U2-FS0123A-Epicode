@@ -152,10 +152,7 @@
                 <div id="welcome-collapse" class="collapse-show">
                     <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 justify-content-center gy-3">
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded-2 shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded-2 shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-scale" alt="...">
                                 <div class="card-body">
@@ -168,10 +165,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -184,10 +178,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5044923/pexels-photo-5044923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -200,10 +191,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -216,10 +204,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -232,10 +217,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg"> <span
-                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger p-2">
-                                    HOT
-                                </span>
+                            <div class="card border border-primary border-1 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -400,6 +382,39 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
+
+    <script>
+
+        let summerDeal = () => {
+            let hotDeals = document.querySelectorAll(".summer")
+            let badge = document.createElement("span")
+            badge.classList.add("position-absolute")
+            badge.classList.add("top-0")
+            badge.classList.add("start-100")
+            badge.classList.add("translate-middle")
+            badge.classList.add("badge")
+            badge.classList.add("rounded-pil")
+            badge.classList.add("bg-danger")
+            badge.classList.add("p-2")
+            badge.innerHTML = "HOT"
+
+            let summerDeals = Array.from(hotDeals)
+
+            summerDeals.forEach((deal) => {
+                deal.appendChild(badge)
+            })
+
+            return hotDeals
+        }
+
+        summerDeal()
+        console.log(summerDeal())
+
+
+
+
+
+    </script>
 </body>
 
 </html>
