@@ -393,7 +393,7 @@
         badge.classList.add("start-100")
         badge.classList.add("translate-middle")
         badge.classList.add("badge")
-        badge.classList.add("rounded-pil")
+        badge.classList.add("rounded-pill")
         badge.classList.add("bg-danger")
         badge.classList.add("p-2")
         badge.innerHTML = "HOT"
@@ -402,15 +402,13 @@
         let summerDeal = () => {
 
             summerDeals.forEach((deal) => {
-                summerDeals.map((deal) => deal.appendChild(badge))
+                deal.appendChild(badge.cloneNode(true))
             })
-
             return summerDeals
         }
 
         summerDeal()
-        console.log(summerDeals)
-
+        console.log(summerDeal());
 
 
 
