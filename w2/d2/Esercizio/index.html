@@ -82,7 +82,7 @@
                     </button>
                 </div>
 
-                <div id="saldi-collapse" class="collapse-show">
+                <div id="saldi-collapse" class="collapse show">
                     <div class="row row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center gy-3">
                         <div class="col">
                             <div class="card border border-primary border-1 rounded-4 overflow-hidden">
@@ -149,10 +149,10 @@
                     </button>
                 </div>
 
-                <div id="welcome-collapse" class="collapse-show">
+                <div id="welcome-collapse" class="collapse show">
                     <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-xl-6 justify-content-center gy-3">
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded-2 shadow-lg summer">
+                            <div class="card border border-0 rounded-2 shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/1320686/pexels-photo-1320686.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-scale" alt="...">
                                 <div class="card-body">
@@ -165,7 +165,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg summer">
+                            <div class="card border border-0 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/3601425/pexels-photo-3601425.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -178,7 +178,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg summer">
+                            <div class="card border border-0 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5044923/pexels-photo-5044923.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -191,7 +191,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg summer">
+                            <div class="card border border-0 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg summer">
+                            <div class="card  border border-0 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card border border-primary border-1 rounded shadow-lg summer">
+                            <div class="card border border-0 rounded shadow-lg summer">
                                 <img src="https://images.pexels.com/photos/5992583/pexels-photo-5992583.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                                     class="card-img-top object-fit-contain" alt="...">
                                 <div class="card-body">
@@ -242,12 +242,12 @@
                     </button>
                 </div>
 
-                <div id="offerta-collapse" class="collapse-show">
+                <div id="offerta-collapse" class="collapse show">
                     <div class="container m-0 d-none d-md-block">
                         <div class="row">
                             <div class="col-8">
                                 <img src="https://images.pexels.com/photos/3404361/pexels-photo-3404361.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                                    alt="Ireland" class="img-fluid border rounded-5">
+                                    alt="Ireland" class="img-fluid border rounded-5 shadow-lg">
                             </div>
                             <div class="col-4">
                                 <h3 class="fs-1">The Emerald Island <br> Ireland</h3>
@@ -269,7 +269,7 @@
                     </button>
                 </div>
 
-                <div id="lastminute-collapse" class="collapse-show">
+                <div id="lastminute-collapse" class="collapse show">
                     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-6 gy-3">
                         <div class="col"><img
                                 src="https://images.pexels.com/photos/4125993/pexels-photo-4125993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -302,7 +302,7 @@
                     </button>
                 </div>
 
-                <div id="recensioni-collapse" class="collapse-show">
+                <div id="recensioni-collapse" class="collapse show">
                     <div class="row my-3 d-flex justify-content-center">
                         <div class="col-1 text-center"><img
                                 src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
@@ -384,31 +384,32 @@
         crossorigin="anonymous"></script>
 
     <script>
+        let hotDeals = document.querySelectorAll(".summer")
+        let summerDeals = Array.from(hotDeals)
+
+        let badge = document.createElement("span")
+        badge.classList.add("position-absolute")
+        badge.classList.add("top-0")
+        badge.classList.add("start-100")
+        badge.classList.add("translate-middle")
+        badge.classList.add("badge")
+        badge.classList.add("rounded-pil")
+        badge.classList.add("bg-danger")
+        badge.classList.add("p-2")
+        badge.innerHTML = "HOT"
+
 
         let summerDeal = () => {
-            let hotDeals = document.querySelectorAll(".summer")
-            let badge = document.createElement("span")
-            badge.classList.add("position-absolute")
-            badge.classList.add("top-0")
-            badge.classList.add("start-100")
-            badge.classList.add("translate-middle")
-            badge.classList.add("badge")
-            badge.classList.add("rounded-pil")
-            badge.classList.add("bg-danger")
-            badge.classList.add("p-2")
-            badge.innerHTML = "HOT"
-
-            let summerDeals = Array.from(hotDeals)
 
             summerDeals.forEach((deal) => {
-                deal.appendChild(badge)
+                summerDeals.map((deal) => deal.appendChild(badge))
             })
 
-            return hotDeals
+            return summerDeals
         }
 
         summerDeal()
-        console.log(summerDeal())
+        console.log(summerDeals)
 
 
 
