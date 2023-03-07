@@ -415,9 +415,18 @@
 
         //TRIP COUNT
         let trips = document.querySelectorAll(".trip")
-        window.alert(`${trips.length} trips`)
+        //window.alert(`${trips.length} trips available`)
 
+        //CARD REMOVAL
+        let cards = document.querySelectorAll(".card")
 
+        let hideCards = () => {
+            cards.forEach(card => {
+                card.style.display = 'none';
+            });
+        }
+
+        hideCards()
 
     </script>
 </body>
