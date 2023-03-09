@@ -1,2 +1,10 @@
 @import 'bootstrap-overrides';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+
+.carousel-control-prev {
+	left: -15%;
+}
+
+.carousel-control-next {
+	right: -15%;
+}

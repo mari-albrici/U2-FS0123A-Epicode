@@ -3,10 +3,37 @@
 
 // 2. Include any default variable overrides here
 
+$primary: #7550fe;
+$secondary: #ffeeda;
+$info: #f5f4f7;
+$success: #1acb98;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import 'bootstrap/variables';
 
 // 4. Include any default map overrides here
+$theme-colors: (
+	'primary': $primary,
+	'secondary': $secondary,
+	'success': $success,
+	'info': $info,
+	'warning': $warning,
+	'danger': $danger,
+	'light': $light,
+	'dark': $dark,
+);
+
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+	6: $spacer * 6,
+	7: $spacer * 9,
+	8: $spacer * 12,
+);
 
 // 5. Include remainder of required parts
 @import 'bootstrap/maps';
