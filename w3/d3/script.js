@@ -14,7 +14,7 @@ fetch('https://striveschool-api.herokuapp.com/books')
 			col.classList.add('col');
 			col.className = 'col';
 			col.innerHTML = `
-			<div class="card id="${book.asin}" style="height: 650px;">
+			<div class="card shadow" id="${book.asin}" style="height: 650px;">
 				<img src="${book.img}" class="card-img-top img-fluid" alt="book thumbnail" style="height: 400px">
 				<div class="card-body">
 					<h5 class="card-title fs-5">${book.title}</h5>
@@ -47,7 +47,12 @@ fetch('https://striveschool-api.herokuapp.com/books')
 
 				let cartElement = document.createElement('li');
 
-				cartElement.innerText = `${book.title}`;
+				let bookCover = document.createElement('img');
+				bookCover.src = `${book.img}`;
+				bookCover.style.width = '35px';
+
+				cartElement.innerHTML =
+					`<img src="${book.img}" alt="book cover" style="width: 40px" class="pe-2 py-2">` + `${book.title}`;
 
 				let remove = document.createElement('button');
 				remove.classList.add('btn');
@@ -70,7 +75,7 @@ fetch('https://striveschool-api.herokuapp.com/books')
 
 				remove.addEventListener('click', () => {
 					volume.remove();
-					localStorage.removeItem;
+					// localStorage.removeItem(, JSON.stringify(booksCart)); rimuovere elemento ANCHE da localStorage ?!
 				});
 			});
 
